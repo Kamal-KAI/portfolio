@@ -6,7 +6,7 @@ Edit this file to update your portfolio without touching any page code.
 # ── PERSONAL INFO ────────────────────────────────────────────────────────────
 PROFILE = {
     "name":      "KAMAL KISHOR",
-    "title":     "AIML Engineer · RESEARCHER · Writer",
+    "title":     "AIML ENGINEER · RESEARCHER · WRITER",
     "tagline":   (
         "I am an Indian Institute of Technology, Madras (IIT-M) graduate and an AI/ML Engineer "
         "with 3+ years of experience building impactful, "
@@ -60,14 +60,14 @@ SKILLS = [
     {"category": "Data & ETL",      "color": "amber",  "items": ["Snowflake", "DBT", "Airflow", "Spark"]},
     {"category": "DevOps & Tools",  "color": "green",  "items": ["Docker", "Git", "Terraform"]},
     {"category": "Databases",       "color": "purple", "items": ["PostgreSQL", "MySQL", "MongoDB"]},
-    {"category": "ML / AI",         "color": "pink",   "items": ["Scikit-learn", "LangChain", "Hugging Face"]},
+    {"category": "ML/AI",         "color": "pink",   "items": ["Scikit-learn","Machine Learning", "LangChain", "Hugging Face"]},
 ]
 
 # ── PROJECTS ─────────────────────────────────────────────────────────────────
 PROJECTS = [
     {
         "num":    "01",
-        "title":  "Project Title One",
+        "title":  "Project 1",
         "desc":   (
             "A short description of what this project does, the problem it solves, "
             "and the impact it had. Use numbers — e.g. reduced latency by 40%."
@@ -79,7 +79,7 @@ PROJECTS = [
     },
     {
         "num":    "02",
-        "title":  "Project Title Two",
+        "title":  "Project 2",
         "desc":   (
             "What did you build? What was the challenge? "
             "What technologies did you use and what was the outcome?"
@@ -91,7 +91,7 @@ PROJECTS = [
     },
     {
         "num":    "03",
-        "title":  "Project Title Three",
+        "title":  "Project 3",
         "desc":   (
             "Two to three sentences max. "
             "Link to a write-up or demo if you have one."
@@ -103,7 +103,7 @@ PROJECTS = [
     },
     {
         "num":    "04",
-        "title":  "Project Title Four",
+        "title":  "Project 4",
         "desc":   (
             "Placeholder for a fourth project. "
             "Add as many entries as you like — the grid adapts automatically."

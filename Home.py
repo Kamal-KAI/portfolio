@@ -10,7 +10,7 @@ st.set_page_config(
     page_title=f"{PROFILE['name']}",
     page_icon="",
     layout="wide",
-    ##initial_sidebar_state="expanded",
+    initial_sidebar_state="expanded",
 )
 
 inject_css()
@@ -152,7 +152,7 @@ neon_divider()
 st.markdown(
     f'<div style="text-align:center;padding:20px 0;">'
     f'<p style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1.5px;">'
-    f'© 2026 {PROFILE["name"]} · Built with Streamlit'
+    f'© 2026 {PROFILE["name"]}'
     f'</p></div>',
     unsafe_allow_html=True,
 )
