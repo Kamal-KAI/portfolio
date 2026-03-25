@@ -36,7 +36,21 @@ html, body, [data-testid="stApp"] {
 }
 [data-testid="stSidebar"] * { font-family: var(--mono) !important;}
 
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
+header { visibility: hidden; height: 0; }
+/* Keep sidebar toggle button always visible */
+[data-testid="collapsedControl"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
+  color: var(--neon) !important;
+}
+
+button[kind="header"] {
+  display: block !important;
+  visibility: visible !important;
+}
 [data-testid="stDecoration"] { display: none; }
 
 /* Tighter overall layout */
