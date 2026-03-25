@@ -32,8 +32,9 @@ html, body, [data-testid="stApp"] {
 [data-testid="stSidebar"] {
   background-color: var(--bg2) !important;
   border-right: 1px solid var(--border) !important;
+  display: block !important;
 }
-[data-testid="stSidebar"] * { font-family: var(--mono) !important; }
+[data-testid="stSidebar"] * { font-family: var(--mono) !important;}
 
 #MainMenu, footer, header { visibility: hidden; }
 [data-testid="stDecoration"] { display: none; }
