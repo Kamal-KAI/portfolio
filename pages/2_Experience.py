@@ -17,9 +17,9 @@ sidebar_nav("Experience")
 
 with st.sidebar:
     st.markdown("---")
-    st.page_link("Home.py", label="← Home")
+    st.markdown("[Home](/) ", unsafe_allow_html=False)
     st.markdown("---")
-    st.caption("Built with Streamlit")
+    st.caption("Built with 💔")
 
 # ── HEADER ───────────────────────────────────────────────────────────────────
 back_home("Experience")

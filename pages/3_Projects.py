@@ -17,7 +17,7 @@ sidebar_nav("Projects")
 
 with st.sidebar:
     st.markdown("---")
-    st.page_link("Home.py", label="← Home")
+    st.markdown("[Home](/) ", unsafe_allow_html=False)
     st.markdown("---")
     st.markdown(
         '<p style="font-family:var(--mono);font-size:9px;color:var(--muted);'
@@ -27,7 +27,7 @@ with st.sidebar:
     all_tags     = sorted({t[0] for p in PROJECTS for t in p.get("tags", [])})
     selected_tag = st.selectbox("Tag", ["All"] + all_tags, label_visibility="collapsed")
     st.markdown("---")
-    st.caption("Built with Streamlit")
+    st.caption("Built with 💔")
 
 # ── HEADER ───────────────────────────────────────────────────────────────────
 back_home("Projects")
@@ -95,4 +95,4 @@ for row_start in range(0, len(filtered), 2):
         )
 
 neon_divider()
-st.page_link("pages/4_Blog.py", label="My Blog →")
+st.page_link("/Blog", label="My blog")

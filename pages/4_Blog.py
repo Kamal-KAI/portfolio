@@ -139,7 +139,7 @@ all_posts = load_posts("technical") + load_posts("personal")
 # Sidebar
 with st.sidebar:
     st.markdown("---")
-    st.page_link("Home.py", label="← Home")
+    st.markdown("[Home](/) ", unsafe_allow_html=False)
     st.markdown("---")
     st.markdown(
         '<p style="font-family:var(--mono);font-size:9px;color:var(--muted);'
@@ -163,7 +163,7 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     st.markdown("---")
-    st.caption("Built with Streamlit")
+    st.caption("Built with 💔")
 
 back_home("Blog")
 section_label("04. Blog")

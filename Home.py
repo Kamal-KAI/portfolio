@@ -51,11 +51,11 @@ st.markdown(f'<p class="hero-bio">{PROFILE["tagline"]}</p>', unsafe_allow_html=T
 
 c1, c2, c3, _ = st.columns([1.4, 1.2, 1.4, 2.25])
 with c1:
-    st.page_link("pages/3_Projects.py", label="View Projects")
+    st.page_link("/Projects", label="View Projects")
 with c2:
-    st.page_link("pages/5_Resume.py",   label="My Resume")
+    st.page_link("/Resume",   label="My Resume")
 with c3:
-    st.page_link("pages/6_Contact.py",  label="Get In Touch")
+    st.page_link("/Contact",  label="Get In Touch")
 
 st.markdown("</div>", unsafe_allow_html=True)
 neon_divider()
@@ -92,7 +92,7 @@ with col_bio:
             unsafe_allow_html=True,
         )
     st.markdown("<br>", unsafe_allow_html=True)
-    st.page_link("pages/2_Experience.py", label="Full Experience →")
+    st.page_link("/Experience", label="Full Experience")
 
 with col_skills:
     skill_cols = st.columns(2)
@@ -145,7 +145,7 @@ for i, p in enumerate(PROJECTS[:2]):
     )
 
 st.markdown("<br>", unsafe_allow_html=True)
-st.page_link("pages/3_Projects.py", label="See All Projects →")
+st.page_link("/Projects", label="See All Projects")
 neon_divider()
 
 # ── FOOTER ────────────────────────────────────────────────────────────────────
