@@ -6,7 +6,7 @@ Called at the top of every page.
 GLOBAL_CSS = """
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 :root {
   --neon:    #00ffe0;
   --amber:   #f59e0b;
@@ -346,6 +346,36 @@ h1, h2, h3, h4 { font-family: var(--sans) !important; font-weight: 800 !importan
   border: 1px solid var(--border) !important;
   border-radius: 0 !important;
   color: var(--text) !important;
+}
+/* Fix Material Icons rendering as text */
+.material-icons {
+  font-family: 'Material Icons' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  display: inline-block !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  word-wrap: normal !important;
+  -webkit-font-feature-settings: 'liga' !important;
+  font-feature-settings: 'liga' !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Ensure sidebar toggle is always clickable */
+[data-testid="collapsedControl"],
+[data-testid="stSidebarCollapsedControl"] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  position: fixed !important;
+  top: 0.5rem !important;
+  left: 0.5rem !important;
+  background: var(--bg2) !important;
+  border: 1px solid var(--border) !important;
+  padding: 4px !important;
+  cursor: pointer !important;
 }
 </style>
 """
