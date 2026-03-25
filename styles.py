@@ -377,6 +377,19 @@ h1, h2, h3, h4 { font-family: var(--sans) !important; font-weight: 800 !importan
   padding: 4px !important;
   cursor: pointer !important;
 }
+/* Replace broken icon with visible button */
+[data-testid="collapsedControl"] svg,
+[data-testid="stSidebarCollapsedControl"] svg {
+  display: none !important;
+}
+
+[data-testid="collapsedControl"]::after,
+[data-testid="stSidebarCollapsedControl"]::after {
+  content: '☰' !important;
+  font-size: 20px !important;
+  color: var(--neon) !important;
+  font-family: sans-serif !important;
+}
 </style>
 """
 
