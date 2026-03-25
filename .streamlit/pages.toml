@@ -1,0 +1,34 @@
+[[pages]]
+path = "Home.py"
+name = "Home"
+icon = "⚡"
+
+[[pages]]
+path = "pages/1_About.py"
+name = "About"
+icon = "👤"
+
+[[pages]]
+path = "pages/2_Experience.py"
+name = "Experience"
+icon = "💼"
+
+[[pages]]
+path = "pages/3_Projects.py"
+name = "Projects"
+icon = "🛠"
+
+[[pages]]
+path = "pages/4_Blog.py"
+name = "Blog"
+icon = "📝"
+
+[[pages]]
+path = "pages/5_Resume.py"
+name = "Resume"
+icon = "📄"
+
+[[pages]]
+path = "pages/6_Contact.py"
+name = "Contact"
+icon = "✉️"
