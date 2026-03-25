@@ -12,7 +12,7 @@ st.set_page_config(
     page_title=f"Resume — {PROFILE['name']}",
     page_icon="📄",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 inject_css()
 sidebar_nav("Resume")
