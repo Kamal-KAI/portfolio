@@ -28,7 +28,7 @@ with st.sidebar:
     if PROFILE.get("Instagram"):
         st.markdown(f"[Instagram]({PROFILE['Instagram']})")
     st.markdown("---")
-    st.caption("Built with Streamlit")
+    st.caption("Built with 💔")
 
 # ── HERO ────────────────
 st.markdown('<div class="hero-wrap">', unsafe_allow_html=True)
