@@ -135,7 +135,7 @@ for i, p in enumerate(PROJECTS[:2]):
         f'<div class="card">'
         f'<div style="font-family:var(--mono);font-size:11px;color:var(--neon);'
         f'opacity:0.4;margin-bottom:12px;">{p["num"]}</div>'
-        f'<h3 style="font-size:16px;margin-bottom:10px;">{p["title"]}</h3>'
+        f'<p style="font-size:18px;margin-bottom:10px;">{p["title"]}</p>'
         f'<p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:16px;">'
         f'{p["desc"]}</p>'
         f'<div style="margin-bottom:16px;">{tags_html}</div>'
