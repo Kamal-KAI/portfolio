@@ -35,7 +35,7 @@ PROFILE = {
         (
             "Outside of work, I sketch (results may vary), confidently accept" 
             "chess challenges (and occasionally regret them), and ride my Hunter "
-            "like I’m in a movie. Also on a long-term mission to visit Japan" 
+            "like I’m in a movie. Also on a long-term mission to visit Japan " 
             "during cherry blossom season mostly for the views, partly for the anime vibes🌸"
         ),
     ],
