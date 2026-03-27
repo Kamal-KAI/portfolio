@@ -138,8 +138,8 @@ for col, item in zip(learn_cols, learning_items):
     col.markdown(
         f'<div class="card" style="text-align:left;">'
         f'<div style="font-size:28px;margin-bottom:14px;">{item["icon"]}</div>'
-        f'<h4 style="font-size:16px;font-weight:200;margin-bottom:10px;line-height:1.3;">'
-        f'{item["title"]}</h4>'
+        f'<p style="font-size:18px;font-weight:600;margin-bottom:10px;line-height:1.3;">'
+        f'{item["title"]}</p>'
         f'<p style="color:var(--muted);font-size:13px;line-height:1.7;margin:0;">'
         f'{item["desc"]}</p>'
         f'</div>',
@@ -175,8 +175,8 @@ for icon, text in interests:
 
 neon_divider()
 
-# c1, c2, _ = st.columns([1.5, 1.5, 4.25])
-# with c1:
-#     st.page_link("pages/2_Experience.py", label="My Experience")
-# with c2:
-#     st.page_link("pages/6_Contact.py",    label="Get In Touch")
+c1, c2, _ = st.columns([1.5, 1.5, 4.25])
+with c1:
+    st.page_link("pages/2_Experience.py", label="My Experience")
+with c2:
+    st.page_link("pages/6_Contact.py",    label="Get In Touch")

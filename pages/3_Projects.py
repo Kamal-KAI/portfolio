@@ -85,7 +85,7 @@ for row_start in range(0, len(filtered), 2):
             f'<div class="card">'
             f'<div style="font-family:var(--mono);font-size:11px;color:var(--neon);'
             f'opacity:0.4;margin-bottom:12px;">{p["num"]}</div>'
-            f'<h3 style="font-size:20px;font-weight:800;margin-bottom:10px;">{p["title"]}</h3>'
+            f'<p style="font-size:18px;font-weight:600;margin-bottom:10px;">{p["title"]}</p>'
             f'<p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:18px;">'
             f'{p["desc"]}</p>'
             f'<div style="margin-bottom:18px;">{tags_html}</div>'

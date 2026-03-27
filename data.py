@@ -119,7 +119,7 @@ PROJECTS = [
             "Developed a cloud-based application embedded within Power BI, facilitating "
             "users to execute CRUD operations for streamlined data management and analysis "
         ),
-        "tags":   [("COMSOL Multiphysics", "purple"), ("MATLAB", "blue"), ("Vibration Shaker", "green")],
+        "tags":   [("PySpark", "neon"), ("POWERAPPS", "purple"), ("POWER AUTOMATE", "blue"), ("POWERBI", "green")],
         "github": "",
         "demo":   "",
         "blog":   "",
@@ -167,7 +167,7 @@ EXPERIENCE = [
 # ── EDUCATION ────────────────────────────────────────────────────────────────
 EDUCATION = [
     {
-        "degree": "MS (Research)",
+        "degree": "MS(Research)",
         "school": "Indian Institute of Technology, Madras (IIT-M)",
         "year":   "2022",
         "detail":"CGPA: 8.6, "
@@ -177,14 +177,25 @@ EDUCATION = [
 
 # ── CERTIFICATIONS ────────────────────────────────────────────────────────────
 CERTIFICATIONS = [
-    # {
-    #     "title": "Certification Name",
-    #     "org":   "Issuing Organisation",
-    #     "date":  "Month Year",
-    # },
-    # {
-    #     "title": "Another Certification",
-    #     "org":   "Issuing Organisation",
-    #     "date":  "Month Year",
-    # },
+    {
+        "title": "Kamal Kishor et al., “A clamped embedded seismic metamaterial with broadband "
+        "ultra-low frequency bandgaps” presented at 12th International Conference on Metamaterials, "
+        "Photonic Crystals and Plasmonics, Spain",
+        "org":   "12th International Conference on Metamaterials, "
+        "Photonic Crystals and Plasmonics, Spain",
+        "date":  "2022",
+    },
+    {
+        "title": "A research Article in the journal Engineering Structure: Proceedings under "
+        "Elsevier Publisher entitled A Clamped Brick Seismic Metamaterial with Broadband "
+        "Ultra-Low Frequency Bandgap",
+        "org":   "Engineering Structure: Proceedings",
+        "date":  "2023",
+    },
+    {
+        "title": "Participated in the conference Non-Destructive Evaluation 2020 "
+        "organized by Indian Society of Non-destructive Testing (ISNT)",
+        "org":   "Indian Society of Non-destructive Testing (ISNT)",
+        "date":  "2020",
+    },
 ]
