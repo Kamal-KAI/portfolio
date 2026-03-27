@@ -33,7 +33,7 @@ with st.sidebar:
 back_home("Projects")
 section_label("03. Projects")
 st.markdown(
-    '<h1 style="font-size:48px;font-weight:800;margin-bottom:8px;">Things I\'ve Built</h1>',
+    '<h1 style="font-size:25px;font-weight:200;margin-bottom:8px;">Things I\'ve Built</h1>',
     unsafe_allow_html=True,
 )
 st.markdown(
@@ -95,4 +95,4 @@ for row_start in range(0, len(filtered), 2):
         )
 
 neon_divider()
-st.page_link("/Blog", label="My blog")
+st.page_link("pages/4_Blog.py", label="My blog")

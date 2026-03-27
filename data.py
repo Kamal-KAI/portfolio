@@ -8,15 +8,12 @@ PROFILE = {
     "name":      "KAMAL KISHOR",
     "title":     "AIML ENGINEER · RESEARCHER · WRITER",
     "tagline":   (
-        "I am an Indian Institute of Technology, Madras (IIT-M) graduate and an AI/ML Engineer "
-        "with 3+ years of experience building impactful, "
-        "data-driven solutions. I specialize in predictive modeling, "
-        "machine learning, and automating critical workflows. "
-        "Proficient in Python, PySpark, and Azure, I develop scalable, "
-        "production-ready systems. I’m passionate about applying NLP, " 
-        "LLMs, and Generative AI to real-world problems in marketing " 
-        "and customer analytics. I focus on bridging deep technical " 
-        "expertise with clear, business-oriented insights."
+        "A Data scientist with 3.5 years of experience delivering business "
+        "impact through predictive modeling, machine learning, and automation. "
+        "Skilled in Python, PySpark, and cloud platforms like Azure for building "
+        "scalable solutions. Passionate about applying NLP, LLMs, and GenAI to "
+        "real-world use cases in marketing and customer analytics. Recognized for "
+        "automating critical workflows and bridging technical depth with stakeholder clarity."
     ),
     "location":  "BANGALORE, INDIA",
     "email":     "96kamal.k@email.com",
@@ -67,10 +64,10 @@ SKILLS = [
 PROJECTS = [
     {
         "num":    "01",
-        "title":  "Project 1",
+        "title":  "End-to-End Forecasting and MLOps Pipeline",
         "desc":   (
-            "A short description of what this project does, the problem it solves, "
-            "and the impact it had. Use numbers — e.g. reduced latency by 40%."
+            "Built demand forecasting models deployed via Azure DevOps CI/CD, enabling automated "
+            "retraining and monitoring on Azure ML for one of the largest FMCG client."
         ),
         "tags":   [("Python", "neon"), ("Snowflake", "amber"), ("AWS", "blue")],
         "github": "https://github.com/yourusername/project-one",
@@ -79,22 +76,23 @@ PROJECTS = [
     },
     {
         "num":    "02",
-        "title":  "Project 2",
+        "title":  "Predictive demand forecasting models (LightGBM, XGBoost, CatBoost)",
         "desc":   (
-            "What did you build? What was the challenge? "
-            "What technologies did you use and what was the outcome?"
+            "Built and deployed predictive demand forecasting models (LightGBM, XGBoost, CatBoost) "
+            "using consolidated datasets (built using PySpark) across 10+ sources, resulting in a "
+            "40% boost in revenue."
         ),
-        "tags":   [("DBT", "green"), ("Airflow", "pink"), ("Docker", "blue")],
+        "tags":   [("Machine Learning", "green"), ("Python", "pink"), ("Docker", "blue")],
         "github": "https://github.com/yourusername/project-two",
         "demo":   "",
         "blog":   "",
     },
     {
         "num":    "03",
-        "title":  "Project 3",
+        "title":  "Optimization of the delivery route to minimize the cost and improve the delivery time",
         "desc":   (
-            "Two to three sentences max. "
-            "Link to a write-up or demo if you have one."
+            "Developed and implemented machine learning algorithms for route optimization, enhancing "
+            "efficiency and reducing operational costs by 13%"
         ),
         "tags":   [("ML", "amber"), ("Python", "neon"), ("Azure", "blue")],
         "github": "https://github.com/yourusername/project-three",
@@ -103,54 +101,66 @@ PROJECTS = [
     },
     {
         "num":    "04",
-        "title":  "Project 4",
+        "title":  "Developed a novel, cost-effective seismic Metamaterial for the shielding of seismic vibrations and low-frequency vibration",
         "desc":   (
-            "Placeholder for a fourth project. "
-            "Add as many entries as you like — the grid adapts automatically."
+            "Performed simulations in frequency and time domain study to obtain the effective design parameters using "
+            "Finite Element software COMSOL Multiphysics and perfomed 1:40 scale-down lab experiments "
+            "to validate the results obtained in Finite Element simulation studies"
         ),
-        "tags":   [("FastAPI", "purple"), ("PostgreSQL", "blue"), ("Docker", "green")],
+        "tags":   [("COMSOL Multiphysics", "purple"), ("MATLAB", "blue"), ("Vibration Shaker", "green")],
         "github": "",
         "demo":   "",
         "blog":   "",
     },
+    {
+        "num":    "05",
+        "title":  "Developed a suite of applications for manufacturing plants, streamlining operations and improving efficiency",
+        "desc":   (
+            "Developed a cloud-based application embedded within Power BI, facilitating "
+            "users to execute CRUD operations for streamlined data management and analysis "
+        ),
+        "tags":   [("COMSOL Multiphysics", "purple"), ("MATLAB", "blue"), ("Vibration Shaker", "green")],
+        "github": "",
+        "demo":   "",
+        "blog":   "",
+    }
 ]
 
 # ── EXPERIENCE ───────────────────────────────────────────────────────────────
 EXPERIENCE = [
     {
         "period":   "Jan 2025 — Present",
-        "role":     "Your Current Role",
-        "company":  "Company Name",
-        "location": "City, Country",
+        "role":     "AIML ENGINEER (DATA SCIENTIST)",
+        "company":  "TIGER ANALYTICS",
+        "location": "BANGALORE, INDIA",
         "points": [
-            "Key achievement or responsibility — use numbers and impact wherever possible.",
-            "Another bullet point describing what you built or delivered.",
-            "Third highlight — tools used, scale of work, outcomes achieved.",
+            "Built demand forecasting models deployed via Azure DevOps CI/CD, enabling automated "
+            "retraining and monitoring on Azure ML for one of the largest FMCG client.",
         ],
-        "tags": [("Python", "neon"), ("Snowflake", "amber")],
+        "tags": [("Python", "neon"), ("MACHINE LEARNING", "amber"), ("PYSPARK", "green"), ("POWER BI", "neon")],
     },
     {
         "period":   "Jul 2023 — Dec 2024",
-        "role":     "Previous Role Title",
-        "company":  "Company Name",
-        "location": "City, Country",
+        "role":     "SENIOR DATA ANALYST",
+        "company":  "TIGER ANALYTICS",
+        "location": "BANGALORE, INDIA",
         "points": [
-            "Key project or achievement at this role.",
-            "Another highlight — use percentages and metrics.",
-            "Technologies used and what you shipped.",
+            "Built and deployed predictive demand forecasting models (LightGBM, XGBoost, CatBoost) "
+            "using consolidated datasets (built using PySpark) across 10+ sources, resulting in a "
+            "40% boost in revenue.",
         ],
-        "tags": [("DBT", "green"), ("AWS", "blue"), ("Docker", "blue")],
+        "tags": [("PYSPARK", "green"), ("PYTHON", "blue"), ("FASTAPI", "blue"), ("POWERAPPS", "neon")],
     },
     {
         "period":   "Jun 2022 — Jun 2023",
-        "role":     "Earlier Role Title",
-        "company":  "Company Name",
-        "location": "City, Country",
+        "role":     "DATA ANALYST",
+        "company":  "TIGER ANALYTICS",
+        "location": "CHENNAI, INDIA",
         "points": [
-            "Describe what you did in this position.",
-            "Technologies, scale, and scope of your work.",
+            "Developed and implemented machine learning algorithms for route optimization, enhancing "
+            "efficiency and reducing operational costs by 13%",
         ],
-        "tags": [("SQL", "neon"), ("Python", "neon"), ("Azure", "blue")],
+        "tags": [("SQL", "neon"), ("Python", "neon"), ("Azure", "blue"), ("POWERAPPS", "neon")],
     },
 ]
 
@@ -160,20 +170,21 @@ EDUCATION = [
         "degree": "MS (Research)",
         "school": "Indian Institute of Technology, Madras (IIT-M)",
         "year":   "2022",
-        "detail": "Optional: GPA, specialisation, thesis, honours, etc.",
+        "detail":"CGPA: 8.6, "
+                "Specialisation: Machine Design"
     },
 ]
 
 # ── CERTIFICATIONS ────────────────────────────────────────────────────────────
 CERTIFICATIONS = [
-    {
-        "title": "Certification Name",
-        "org":   "Issuing Organisation",
-        "date":  "Month Year",
-    },
-    {
-        "title": "Another Certification",
-        "org":   "Issuing Organisation",
-        "date":  "Month Year",
-    },
+    # {
+    #     "title": "Certification Name",
+    #     "org":   "Issuing Organisation",
+    #     "date":  "Month Year",
+    # },
+    # {
+    #     "title": "Another Certification",
+    #     "org":   "Issuing Organisation",
+    #     "date":  "Month Year",
+    # },
 ]

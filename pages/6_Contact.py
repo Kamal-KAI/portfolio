@@ -27,7 +27,7 @@ with st.sidebar:
 back_home("Contact")
 section_label("06. Contact")
 st.markdown(
-    '<h1 style="font-size:48px;font-weight:800;margin-bottom:8px;">Get In Touch</h1>',
+    '<h1 style="font-size:25px;font-weight:200;margin-bottom:8px;">Get In Touch</h1>',
     unsafe_allow_html=True,
 )
 st.markdown(
@@ -45,8 +45,8 @@ with col_form:
     section_label("Send a Message")
     st.markdown("<br>", unsafe_allow_html=True)
 
-    name    = st.text_input("Your Name",    placeholder="Jane Smith",          key="contact_name")
-    email   = st.text_input("Your Email",   placeholder="jane@example.com",    key="contact_email")
+    name    = st.text_input("Your Name",    placeholder="Narendra Modi",          key="contact_name")
+    email   = st.text_input("Your Email",   placeholder="Ironman@example.com",    key="contact_email")
     subject = st.text_input("Subject",      placeholder="Project collaboration / Question / Hello", key="contact_subject")
     message = st.text_area( "Message",      placeholder="What's on your mind?", height=160, key="contact_message")
 
@@ -101,18 +101,18 @@ with col_links:
         '<span style="width:8px;height:8px;background:#34d399;border-radius:50%;'
         'display:inline-block;box-shadow:0 0 6px rgba(52,211,153,0.5);"></span>'
         '<span style="font-family:var(--mono);font-size:10px;letter-spacing:1.5px;'
-        'color:#34d399;text-transform:uppercase;">Available for opportunities</span>'
+        'color:#34d399;text-transform:uppercase;">Available Online 👇</span>'
         '</div>',
         unsafe_allow_html=True,
     )
 
     # Build channel list — only entries with non-empty values are shown
     contact_channels = [
-        ("✉️",  "Email",     PROFILE.get("email", ""),     f"mailto:{PROFILE.get('email','')}"),
         ("💼",  "LinkedIn",  PROFILE.get("linkedin", ""),  PROFILE.get("linkedin", "")),
+        ("📧",  "Email",     PROFILE.get("email", ""),     f"mailto:{PROFILE.get('email','')}"),
         ("📸",  "Instagram", PROFILE.get("instagram", ""), PROFILE.get("instagram", "")),
         ("🐙",  "GitHub",    PROFILE.get("github", ""),    PROFILE.get("github", "")),
-        ("🐦",  "Twitter",   PROFILE.get("twitter", ""),   PROFILE.get("twitter", "")),
+        #("🐦",  "Twitter",   PROFILE.get("twitter", ""),   PROFILE.get("twitter", "")),
     ]
 
     # Render one card per channel — each as its own st.markdown call
@@ -149,7 +149,7 @@ with col_links:
     st.markdown(
         '<p style="font-family:var(--mono);font-size:10px;color:var(--muted);'
         'line-height:1.7;margin-top:12px;">'
-        'Typically reply within 48 hours.<br>'
+        "Often reply within 24 hours, unless it's weekend.😁<br>"
         'Best for work inquiries: LinkedIn or Email.</p>',
         unsafe_allow_html=True,
     )
