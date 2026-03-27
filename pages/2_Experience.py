@@ -76,12 +76,8 @@ for edu in EDUCATION:
         f'<div class="card">'
         f'<div style="font-family:var(--mono);font-size:10px;color:var(--neon);'
         f'letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">{edu["year"]}</div>'
-<<<<<<< HEAD
-        f'<p style="font-size:20px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
-=======
         f'<p style="font-size:16px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
-        #f'<p style="font-size:16px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
->>>>>>> 2d0839a (minor changes)
+        #f'<h3 style="font-size:22px;font-weight:800;margin-bottom:4px;">{edu["degree"]}</h3>'
         f'<p style="color:var(--muted);font-size:14px;margin-bottom:0;">{edu["school"]}</p>'
         f'{detail_html}'
         f'</div>',
