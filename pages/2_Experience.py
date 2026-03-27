@@ -25,11 +25,11 @@ with st.sidebar:
 back_home("Experience")
 section_label("02. Experience")
 st.markdown(
-    '<h1 style="font-size:48px;font-weight:800;margin-bottom:8px;">Where I\'ve Worked</h1>',
+    '<h2 style="font-size:22px;font-weight:100;margin-bottom:8px;">Where I\'ve Worked</h2>',
     unsafe_allow_html=True,
 )
 st.markdown(
-    '<p style="color:var(--muted);font-size:14px;line-height:1.7;max-width:560px;margin-bottom:16px;">'
+    '<p style="color:var(--muted);font-size:12px;line-height:1.7;max-width:560px;margin-bottom:16px;">'
     'A timeline of roles, responsibilities, and what I shipped along the way.</p>',
     unsafe_allow_html=True,
 )
@@ -42,7 +42,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 for exp in EXPERIENCE:
     tags_html   = "".join(tag(t[0], t[1]) for t in exp.get("tags", []))
     points_html = "".join(
-        f'<li style="font-size:13px;color:var(--muted);line-height:1.7;'
+        f'<li style="font-size:11px;color:var(--muted);line-height:1.7;'
         f'margin-bottom:8px;list-style:none;padding-left:4px;">'
         f'<span style="color:var(--neon);opacity:0.6;margin-right:6px;">▸</span>{pt}</li>'
         for pt in exp["points"]
@@ -75,7 +75,7 @@ for edu in EDUCATION:
         f'<div class="card">'
         f'<div style="font-family:var(--mono);font-size:10px;color:var(--neon);'
         f'letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">{edu["year"]}</div>'
-        f'<h3 style="font-size:22px;font-weight:800;margin-bottom:4px;">{edu["degree"]}</h3>'
+        f'<h4 style="font-size:18px;font-weight:100;margin-bottom:3px;">{edu["degree"]}</h4>'
         f'<p style="color:var(--muted);font-size:14px;margin-bottom:0;">{edu["school"]}</p>'
         f'{detail_html}'
         f'</div>',
@@ -84,7 +84,7 @@ for edu in EDUCATION:
 
 neon_divider()
 
-# ── CERTIFICATIONS ────────────────────────────────────────────────────────────
+# ── CERTIFICATIONS 
 section_label("Certifications")
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -94,7 +94,7 @@ for i, cert in enumerate(CERTIFICATIONS):
         f'<div class="card" style="margin-bottom:14px;">'
         f'<div style="font-family:var(--mono);font-size:9px;color:var(--neon);'
         f'letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">{cert["date"]}</div>'
-        f'<h4 style="font-size:16px;font-weight:700;margin-bottom:4px;">{cert["title"]}</h4>'
+        f'<h4 style="font-size:16px;font-weight:200;margin-bottom:4px;">{cert["title"]}</h4>'
         f'<p style="color:var(--muted);font-size:12px;margin:0;">{cert["org"]}</p>'
         f'</div>',
         unsafe_allow_html=True,

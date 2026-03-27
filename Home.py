@@ -3,7 +3,7 @@ Home.py — Entry point. Hero · Stats · About · Featured Projects.
 """
 
 import streamlit as st
-from styles import inject_css, sidebar_nav, section_label, neon_divider, tag
+from styles import inject_css, section_label, neon_divider, tag, sidebar_nav
 from data import PROFILE, STATS, SKILLS, PROJECTS
 
 st.set_page_config(
@@ -78,7 +78,7 @@ neon_divider()
 # ── ABOUT ────────────────
 section_label("About Me")
 st.markdown(
-    '<h2 style="font-size:38px;font-weight:800;margin-bottom:28px;">Who I Am</h2>',
+    '<h2 style="font-size:25px;font-weight:200;margin-bottom:20px;">Who I Am</h2>',
     unsafe_allow_html=True,
 )
 
@@ -111,7 +111,7 @@ neon_divider()
 # ── FEATURED PROJECTS ─────────────────────────────────────────────────────────
 section_label("Featured Work")
 st.markdown(
-    '<h2 style="font-size:38px;font-weight:800;margin-bottom:28px;">Recent Projects</h2>',
+    '<h3 style="font-size:25px;font-weight:200;margin-bottom:28px;">Recent Projects</h3>',
     unsafe_allow_html=True,
 )
 
@@ -135,7 +135,7 @@ for i, p in enumerate(PROJECTS[:2]):
         f'<div class="card">'
         f'<div style="font-family:var(--mono);font-size:11px;color:var(--neon);'
         f'opacity:0.4;margin-bottom:12px;">{p["num"]}</div>'
-        f'<h3 style="font-size:20px;margin-bottom:10px;">{p["title"]}</h3>'
+        f'<h3 style="font-size:16px;margin-bottom:10px;">{p["title"]}</h3>'
         f'<p style="color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:16px;">'
         f'{p["desc"]}</p>'
         f'<div style="margin-bottom:16px;">{tags_html}</div>'

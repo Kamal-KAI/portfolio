@@ -25,7 +25,7 @@ with st.sidebar:
 # ── HEADER ───────────────────────────────────────────────────────────────────
 back_home("About")
 st.markdown(
-    '<h1 style="font-size:48px;font-weight:800;margin-bottom:8px;">About Me</h1>',
+    '<h1 style="font-size:25px;font-weight:200;margin-bottom:8px;">About Me</h1>',
     unsafe_allow_html=True,
 )
 st.markdown(
@@ -45,7 +45,7 @@ with col_bio:
     st.markdown("<br>", unsafe_allow_html=True)
     for line in PROFILE["bio_lines"]:
         st.markdown(
-            f'<p style="color:var(--muted);line-height:1.9;font-size:15px;margin-bottom:20px;">'
+            f'<p style="color:var(--muted);line-height:1.9;font-size:14px;margin-bottom:10px;">'
             f'{line}</p>',
             unsafe_allow_html=True,
         )
@@ -57,14 +57,14 @@ with col_quick:
     facts = [
         ("📍", "Location",    PROFILE.get("location", "—")),
         ("🎓", "Education",   EDUCATION[0]["school"] if EDUCATION else "—"),
-        ("💼", "Currently",   "Open to opportunities" ),
+        ("💼", "Currently",   "AIML ENGINEER at TIGER ANALYTICS" ),
         ("✍️", "Writing",     "Technical & personal blog"),
-        ("🌐", "Languages",   "English · Hindi"),
+        ("🌐", "Languages",   "English · Hindi · Learning Spanish"),
     ]
     for icon, label, value in facts:
         st.markdown(
-            f'<div style="display:flex;gap:14px;align-items:flex-start;'
-            f'margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border);">'
+            f'<div style="display:flex;gap:10px;align-items:flex-start;'
+            f'margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--border);">'
             f'<span style="font-size:16px;margin-top:2px;">{icon}</span>'
             f'<div>'
             f'<div style="font-family:var(--mono);font-size:9px;letter-spacing:2px;'
@@ -87,7 +87,7 @@ neon_divider()
 # ── SKILLS ───────────────────────────────────────────────────────────────────
 section_label("Skills & Technologies")
 st.markdown(
-    '<h2 style="font-size:32px;font-weight:800;margin-bottom:28px;">What I Work With</h2>',
+    '<h2 style="font-size:25px;font-weight:200;margin-bottom:20px;">What I Work With</h2>',
     unsafe_allow_html=True,
 )
 
@@ -107,7 +107,7 @@ neon_divider()
 # ── CURRENTLY LEARNING ──────────
 section_label("Currently Learning")
 st.markdown(
-    '<h2 style="font-size:32px;font-weight:800;margin-bottom:28px;">What\'s on My Radar</h2>',
+    '<h4 style="font-size:20px;font-weight:50;margin-bottom:10px;">What\'s on My Radar</h4>',
     unsafe_allow_html=True,
 )
 
@@ -138,7 +138,7 @@ for col, item in zip(learn_cols, learning_items):
     col.markdown(
         f'<div class="card" style="text-align:left;">'
         f'<div style="font-size:28px;margin-bottom:14px;">{item["icon"]}</div>'
-        f'<h4 style="font-size:16px;font-weight:700;margin-bottom:10px;line-height:1.3;">'
+        f'<h4 style="font-size:16px;font-weight:200;margin-bottom:10px;line-height:1.3;">'
         f'{item["title"]}</h4>'
         f'<p style="color:var(--muted);font-size:13px;line-height:1.7;margin:0;">'
         f'{item["desc"]}</p>'
@@ -151,7 +151,7 @@ neon_divider()
 # ── INTERESTS / OUTSIDE WORK ──────────────────────────────────────────────────
 section_label("Outside Work")
 st.markdown(
-    '<h2 style="font-size:32px;font-weight:800;margin-bottom:28px;">Beyond the Terminal</h2>',
+    '<h2 style="font-size:25px;font-weight:200;margin-bottom:28px;">Beyond the Terminal</h2>',
     unsafe_allow_html=True,
 )
 

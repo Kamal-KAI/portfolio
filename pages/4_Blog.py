@@ -110,7 +110,7 @@ if "open_post" in st.session_state:
         unsafe_allow_html=True,
     )
     st.markdown(
-        f'<h1 style="font-size:40px;font-weight:800;margin:12px 0 8px;line-height:1.1;">'
+        f'<h1 style="font-size:25px;font-weight:200;margin:12px 0 8px;line-height:1.1;">'
         f'{post["title"]}</h1>',
         unsafe_allow_html=True,
     )
@@ -168,7 +168,7 @@ with st.sidebar:
 back_home("Blog")
 section_label("04. Blog")
 st.markdown(
-    '<h1 style="font-size:48px;font-weight:800;margin-bottom:8px;">Thoughts & Writing</h1>',
+    '<h1 style="font-size:25px;font-weight:200;margin-bottom:8px;">Thoughts & Writing</h1>',
     unsafe_allow_html=True,
 )
 st.markdown(
@@ -231,20 +231,20 @@ else:
 
 neon_divider()
 
-with st.expander("📌  How to add a new blog post"):
-    st.markdown("""
-Create a `.md` file in `posts/technical/` or `posts/personal/`:
+# with st.expander("📌  How to add a new blog post"):
+#     st.markdown("""
+# Create a `.md` file in `posts/technical/` or `posts/personal/`:
 
-```markdown
----
-title: My Post Title
-date: March 23, 2025
-excerpt: One or two sentences shown as the card preview.
-tags: Python, Snowflake, DBT
----
+# ```markdown
+# ---
+# title: My Post Title
+# date: March 23, 2025
+# excerpt: One or two sentences shown as the card preview.
+# tags: Python, Snowflake, DBT
+# ---
 
-# Post content here in Markdown
-```
+# # Post content here in Markdown
+# ```
 
-**Naming tip:** Prefix with `YYYY-MM-DD-` for newest-first ordering.
-""")
+# **Naming tip:** Prefix with `YYYY-MM-DD-` for newest-first ordering.
+# """)

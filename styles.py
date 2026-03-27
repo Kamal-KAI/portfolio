@@ -34,23 +34,13 @@ html, body, [data-testid="stApp"] {
   border-right: 1px solid var(--border) !important;
   display: block !important;
 }
-[data-testid="stSidebar"] * { font-family: var(--mono) !important;}
+[data-testid="stSidebar"] *:not([data-testid="collapsedControl"]):not([data-testid="collapsedControl"] *):not(button):not(button *) { 
+  font-family: var(--mono) !important; 
+}
 
 #MainMenu, footer { visibility: hidden; }
-header { visibility: hidden; height: 0; }
-/* Keep sidebar toggle button always visible */
-[data-testid="collapsedControl"] {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  z-index: 999 !important;
-  color: var(--neon) !important;
-}
-
-button[kind="header"] {
-  display: block !important;
-  visibility: visible !important;
-}
+header { visibility: hidden; }
+header [data-testid="stSidebarCollapsedControl"] { visibility: visible !important; }
 [data-testid="stDecoration"] { display: none; }
 
 /* Tighter overall layout */
@@ -347,49 +337,6 @@ h1, h2, h3, h4 { font-family: var(--sans) !important; font-weight: 800 !importan
   border-radius: 0 !important;
   color: var(--text) !important;
 }
-/* Fix Material Icons rendering as text */
-.material-icons {
-  font-family: 'Material Icons' !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  display: inline-block !important;
-  line-height: 1 !important;
-  text-transform: none !important;
-  letter-spacing: normal !important;
-  word-wrap: normal !important;
-  -webkit-font-feature-settings: 'liga' !important;
-  font-feature-settings: 'liga' !important;
-  -webkit-font-smoothing: antialiased !important;
-}
-
-/* Ensure sidebar toggle is always clickable */
-[data-testid="collapsedControl"],
-[data-testid="stSidebarCollapsedControl"] {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  z-index: 9999 !important;
-  position: fixed !important;
-  top: 0.5rem !important;
-  left: 0.5rem !important;
-  background: var(--bg2) !important;
-  border: 1px solid var(--border) !important;
-  padding: 4px !important;
-  cursor: pointer !important;
-}
-/* Replace broken icon with visible button */
-[data-testid="collapsedControl"] svg,
-[data-testid="stSidebarCollapsedControl"] svg {
-  display: none !important;
-}
-
-[data-testid="collapsedControl"]::after,
-[data-testid="stSidebarCollapsedControl"]::after {
-  content: '☰' !important;
-  font-size: 20px !important;
-  color: var(--neon) !important;
-  font-family: sans-serif !important;
-}
 </style>
 """
 
@@ -398,6 +345,7 @@ def inject_css():
     import streamlit as st
     st.markdown(GLOBAL_CSS, unsafe_allow_html=True)
     st.markdown('<div class="grid-bg"></div>', unsafe_allow_html=True)
+
 
 
 def sidebar_nav(current: str = ""):
