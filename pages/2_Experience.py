@@ -52,7 +52,7 @@ for exp in EXPERIENCE:
         f'  <div class="timeline-dot"></div>'
         f'  <div class="timeline-period">{exp["period"]}</div>'
         #f'  <div class="timeline-role">{exp["role"]}</div>'
-        f'<p style="font-size:20px;font-weight:500;margin-bottom:3px;">{exp["role"]}</p>'
+        f'<p style="font-size:16px;font-weight:500;margin-bottom:3px;">{exp["role"]}</p>'
         f'  <div class="timeline-company">{exp["company"]} · {exp["location"]}</div>'
         f'  <ul style="padding:0;margin:0 0 16px;">{points_html}</ul>'
         f'  <div>{tags_html}</div>'
@@ -76,7 +76,12 @@ for edu in EDUCATION:
         f'<div class="card">'
         f'<div style="font-family:var(--mono);font-size:10px;color:var(--neon);'
         f'letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">{edu["year"]}</div>'
+<<<<<<< HEAD
         f'<p style="font-size:20px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
+=======
+        f'<p style="font-size:16px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
+        #f'<p style="font-size:16px;font-weight:500;margin-bottom:3px;">{edu["degree"]}</p>'
+>>>>>>> 2d0839a (minor changes)
         f'<p style="color:var(--muted);font-size:14px;margin-bottom:0;">{edu["school"]}</p>'
         f'{detail_html}'
         f'</div>',
