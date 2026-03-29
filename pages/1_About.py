@@ -56,7 +56,7 @@ with col_quick:
 
     facts = [
         ("📍", "Location",    PROFILE.get("location", "—")),
-        ("🎓", "Education",   "IIT Madras (MS) & BIET JHANSI (B.Tech)"),
+        ("🎓", "Education",   "IIT Madras (MS)"),
         ("💼", "Currently",   "AI/ML Engineer at Tiger Analytics"),
         ("🔬", "Research",    "Published in Elsevier · Presented in Spain"),
         ("✍️", "Writing",     "Technical & Personal Blog"),
@@ -85,21 +85,21 @@ with col_quick:
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--neon)\';this.style.color=\'var(--neon)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'GitHub ↗</a>')
+                          f'GitHub</a>')
     if PROFILE.get("linkedin"):
         social_links.append(f'<a href="{PROFILE["linkedin"]}" target="_blank" style="color:var(--text);text-decoration:none;'
                           f'border:1px solid var(--border);padding:8px 16px;display:inline-block;margin:4px;'
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--blue)\';this.style.color=\'var(--blue)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'LinkedIn ↗</a>')
+                          f'LinkedIn</a>')
     if PROFILE.get("email"):
         social_links.append(f'<a href="mailto:{PROFILE["email"]}" style="color:var(--text);text-decoration:none;'
                           f'border:1px solid var(--border);padding:8px 16px;display:inline-block;margin:4px;'
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--pink)\';this.style.color=\'var(--pink)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'Email ↗</a>')
+                          f'Email</a>')
     
     st.markdown('<div style="display:flex;flex-wrap:wrap;gap:4px;">' + ''.join(social_links) + '</div>', 
                 unsafe_allow_html=True)
@@ -109,7 +109,7 @@ neon_divider()
 # ── ACHIEVEMENTS ─────────────────────────────────────────────────────────────
 section_label("🏆 Key Achievements")
 st.markdown(
-    '<h2 style="font-size:25px;font-weight:500;margin-bottom:24px;">Highlights & Recognition</h2>',
+    '<h4 style="font-size:25px;font-weight:200;margin-bottom:24px;">Highlights & Recognition</h4>',
     unsafe_allow_html=True,
 )
 
@@ -134,7 +134,7 @@ neon_divider()
 # ── SKILLS ───────────────────────────────────────────────────────────────────
 section_label("Skills & Technologies")
 st.markdown(
-    '<h2 style="font-size:24px;font-weight:500;margin-bottom:24px;">What I Work With</h2>',
+    '<h4 style="font-size:24px;font-weight:200;margin-bottom:24px;">What I Work With</h4>',
     unsafe_allow_html=True,
 )
 
@@ -154,7 +154,7 @@ neon_divider()
 # ── CURRENTLY LEARNING ──────────
 section_label("🎯Current Focus")
 st.markdown(
-    '<h2 style="font-size:24px;font-weight:500;margin-bottom:20px;">What\'s on My Radar</h2>',
+    '<h4 style="font-size:24px;font-weight:200;margin-bottom:20px;">What\'s on My Radar</h4>',
     unsafe_allow_html=True,
 )
 
@@ -204,10 +204,10 @@ for i, item in enumerate(learning_items):
 
 neon_divider()
 
-# ── INTERESTS / OUTSIDE WORK ──────────────────────────────────────────────────
+# ── OUTSIDE WORK ───────
 section_label("🎨 Beyond the Terminal")
 st.markdown(
-    '<h2 style="font-size:24px;font-weight:600;margin-bottom:28px;">Life Outside Work</h2>',
+    '<h2 style="font-size:24px;font-weight:500;margin-bottom:28px;">Life Outside Work</h2>',
     unsafe_allow_html=True,
 )
 
@@ -215,9 +215,9 @@ interests = [
     ("📚", "Reading", "Non-fiction, systems thinking, behavioral economics, and the occasional sci-fi thriller"),
     ("✍️", "Writing", "Maintaining this blog as a commitment to learn in public and document my journey"),
     ("🏃", "Running", "5K three times a week—slow but consistent. Working toward a sub-25 minute mark"),
-    ("♟️", "Chess", "Rated 1600+ on chess.com. Always up for a friendly game (or a competitive one)"),
+    ("♟️", "Chess", "Rated 1700+ on chess.com. Always up for a friendly game (or a competitive one)"),
     ("🏍️", "Riding", "Weekend warrior on my Hunter 350. Dream trip: Leh-Ladakh someday"),
-    ("🎮", "Gaming", "Strategy games (Civilization, Age of Empires) when I need to shut the analytical brain off"),
+    ("🎮", "Gaming", "Strategy games"),
     ("🎨", "Sketching", "Casual sketching—portraits and landscapes. Results vary from 'decent' to 'abstract art'"),
 ]
 

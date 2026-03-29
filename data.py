@@ -17,9 +17,9 @@ PROFILE = {
     ),
     "location":  "BANGALORE, INDIA",
     "email":     "96kamal.k@gmail.com",
-    "github":    "https://github.com/kamalkishor1991",
+    "github":    "https://github.com/kamal-kai",
     "linkedin":  "https://www.linkedin.com/in/kamal-kishor-a17818146/",
-    "instagram": "https://www.instagram.com/kamal.kishor1991/",
+    "instagram": "https://www.instagram.com/",
     "twitter":   "",   # leave empty to hide
     "bio_lines": [
         (
@@ -29,21 +29,21 @@ PROFILE = {
             "business impact."
         ),
         (
-            "🎯 My expertise spans predictive modeling, Natural Language Processing, Large Language Models, "
+            "My expertise spans predictive modeling, Natural Language Processing, Large Language Models, "
             "and Generative AI. I leverage Python, PySpark, and cloud platforms (primarily Azure) to architect "
             "end-to-end ML pipelines—from data ingestion and feature engineering to model deployment and monitoring. "
             "I'm particularly passionate about solving complex problems in marketing analytics and customer intelligence."
         ),
         (
-            "🚀 Beyond the technical stack, I'm known for automating critical workflows that save hundreds of hours, "
+            "Beyond the technical stack, I'm known for automating critical workflows that save hundreds of hours, "
             "and for my ability to bridge the gap between data science complexity and stakeholder clarity. I believe "
             "the best solutions are both technically sound and practically adoptable."
         ),
         (
-            "🎨 Outside of work, you'll find me sketching (results vary wildly 😄), accepting chess challenges "
+            "Outside of work, you'll find me sketching (results vary wildly😄), accepting chess challenges "
             "(and sometimes regretting them), and riding my Hunter 350 like I'm auditioning for a movie. "
             "Also on a long-term mission to visit Japan during cherry blossom season—mostly for the views, "
-            "partly for the anime vibes. 🌸🏍️"
+            "partly for the anime vibes.🌸"
         ),
     ],
 }
@@ -62,27 +62,27 @@ SKILLS = [
     {
         "category": "Programming & Scripting",
         "color": "neon",
-        "items": ["Python", "PySpark", "SQL", "Bash", "R"]
+        "items": ["Python", "PySpark", "SQL", "Bash"]
     },
     {
         "category": "Machine Learning & AI",
         "color": "pink",
-        "items": ["Scikit-learn", "XGBoost", "LightGBM", "CatBoost", "TensorFlow", "PyTorch", "LangChain", "Hugging Face"]
+        "items": ["Scikit-learn", "XGBoost", "LightGBM", "TensorFlow", "LangChain", "Hugging Face"]
     },
     {
         "category": "Cloud & Infrastructure",
         "color": "blue",
-        "items": ["Azure ML", "Azure DevOps", "AWS", "GCP", "Docker", "Kubernetes"]
+        "items": ["Azure ML", "Azure DevOps", "Docker", "Kubernetes"]
     },
     {
         "category": "Data Engineering",
         "color": "amber",
-        "items": ["Snowflake", "Databricks", "Apache Spark", "Airflow", "DBT", "ETL/ELT"]
+        "items": ["PySpark", "Databricks", "Airflow", "DBT", "ETL/ELT"]
     },
     {
         "category": "Databases",
         "color": "purple",
-        "items": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Vector DBs"]
+        "items": ["PostgreSQL", "MySQL", "MongoDB"]
     },
     {
         "category": "Analytics & Visualization",
@@ -229,12 +229,12 @@ EDUCATION = [
         "detail": "CGPA: 8.6/10 · Specialization: Machine Design & Computational Mechanics · "
                  "Thesis: Novel Seismic Metamaterials for Low-Frequency Vibration Attenuation"
     },
-    {
-        "degree": "Bachelor of Technology in Mechanical Engineering",
-        "school": "BIET JHANSI",
-        "year":   "2014 — 2018",
-        "detail": "CGPA: 8.06/10 · Focus: Design, Manufacturing, and Thermal Engineering"
-    },
+    # {
+    #     "degree": "Bachelor of Technology in Mechanical Engineering",
+    #     "school": "BIET JHANSI",
+    #     "year":   "2014 — 2018",
+    #     "detail": "CGPA: 8.06/10 · Focus: Design, Manufacturing, and Thermal Engineering"
+    # },
 ]
 
 # ── CERTIFICATIONS & PUBLICATIONS ────────────────────────────────────────────
