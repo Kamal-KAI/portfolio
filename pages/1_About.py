@@ -1,11 +1,18 @@
 """
-pages/1_About.py — Enhanced About page with achievements and refined UI.
-Deep-dive bio, skills, current focus, interests, and key achievements.
+pages/1_About.py — Enhanced About page with AI Assistant
+Deep-dive bio, skills, achievements, and AI-powered Q&A
 """
 
 import streamlit as st
 from styles import inject_css, sidebar_nav, section_label, neon_divider, tag, back_home
 from data import PROFILE, SKILLS, EDUCATION, CERTIFICATIONS, ACHIEVEMENTS
+
+# Import AI assistant
+try:
+    from ai_assistant import render_ai_assistant
+    AI_ENABLED = True
+except ImportError:
+    AI_ENABLED = False
 
 st.set_page_config(
     page_title=f"About — {PROFILE['name']}",
@@ -19,29 +26,39 @@ sidebar_nav("About")
 with st.sidebar:
     st.markdown("---")
     st.markdown("[Home](/) ", unsafe_allow_html=False)
+    
+    # AI Assistant in sidebar
+    if AI_ENABLED:
+        render_ai_assistant(context="about", position="sidebar")
+    
     st.markdown("---")
-    st.caption("Built with 💙 ·")
+    st.caption("Built with 💙")
 
 # ── HEADER ───────────────────────────────────────────────────────────────────
 back_home("About")
 st.markdown(
-    '<h1 style="font-size:25px;font-weight:500;margin-bottom:12px;background:linear-gradient(135deg, #00ffe0 0%, #60a5fa 100%);'
+    '<h1 style="font-size:25px;font-weight:200;margin-bottom:12px;background:linear-gradient(135deg, #00ffe0 0%, #60a5fa 100%);'
     '-webkit-background-clip:text;-webkit-text-fill-color:transparent;">About Me</h1>',
     unsafe_allow_html=True,
 )
 st.markdown(
     f'<p style="font-family:var(--mono);font-size:11px;letter-spacing:2px;'
-    f'color:var(--neon);margin-bottom:24px;opacity:0.8;">📍{PROFILE["location"]}</p>',
+    f'color:var(--neon);margin-bottom:24px;opacity:0.8;">📍 {PROFILE["location"]}</p>',
     unsafe_allow_html=True,
 )
 
 neon_divider()
 
+# ── AI ASSISTANT (MAIN) ──────────────────────────────────────────────────────
+if AI_ENABLED:
+    render_ai_assistant(context="about", position="main")
+    neon_divider()
+
 # ── BIO ──────────────────────────────────────────────────────────────────────
 col_bio, col_quick = st.columns([3, 2], gap="large")
 
 with col_bio:
-    section_label("👨‍💻 Biography")
+    section_label("👨‍💻Biography")
     st.markdown("<br>", unsafe_allow_html=True)
     for line in PROFILE["bio_lines"]:
         st.markdown(
@@ -85,21 +102,21 @@ with col_quick:
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--neon)\';this.style.color=\'var(--neon)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'GitHub</a>')
+                          f'GitHub ↗</a>')
     if PROFILE.get("linkedin"):
         social_links.append(f'<a href="{PROFILE["linkedin"]}" target="_blank" style="color:var(--text);text-decoration:none;'
                           f'border:1px solid var(--border);padding:8px 16px;display:inline-block;margin:4px;'
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--blue)\';this.style.color=\'var(--blue)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'LinkedIn</a>')
+                          f'LinkedIn ↗</a>')
     if PROFILE.get("email"):
         social_links.append(f'<a href="mailto:{PROFILE["email"]}" style="color:var(--text);text-decoration:none;'
                           f'border:1px solid var(--border);padding:8px 16px;display:inline-block;margin:4px;'
                           f'font-family:var(--mono);font-size:10px;letter-spacing:1px;transition:all 0.2s;"'
                           f'onmouseover="this.style.borderColor=\'var(--pink)\';this.style.color=\'var(--pink)\';"'
                           f'onmouseout="this.style.borderColor=\'var(--border)\';this.style.color=\'var(--text)\';">'
-                          f'Email</a>')
+                          f'Email ↗</a>')
     
     st.markdown('<div style="display:flex;flex-wrap:wrap;gap:4px;">' + ''.join(social_links) + '</div>', 
                 unsafe_allow_html=True)
@@ -107,9 +124,9 @@ with col_quick:
 neon_divider()
 
 # ── ACHIEVEMENTS ─────────────────────────────────────────────────────────────
-section_label("🏆 Key Achievements")
+section_label("🏆Key Achievements")
 st.markdown(
-    '<h4 style="font-size:25px;font-weight:200;margin-bottom:24px;">Highlights & Recognition</h4>',
+    '<h2 style="font-size:24px;font-weight:600;margin-bottom:24px;">Highlights & Recognition</h2>',
     unsafe_allow_html=True,
 )
 
@@ -134,7 +151,7 @@ neon_divider()
 # ── SKILLS ───────────────────────────────────────────────────────────────────
 section_label("Skills & Technologies")
 st.markdown(
-    '<h4 style="font-size:24px;font-weight:200;margin-bottom:24px;">What I Work With</h4>',
+    '<h2 style="font-size:24px;font-weight:600;margin-bottom:24px;">What I Work With</h2>',
     unsafe_allow_html=True,
 )
 
@@ -154,7 +171,7 @@ neon_divider()
 # ── CURRENTLY LEARNING ──────────
 section_label("🎯Current Focus")
 st.markdown(
-    '<h4 style="font-size:24px;font-weight:200;margin-bottom:20px;">What\'s on My Radar</h4>',
+    '<h2 style="font-size:24px;font-weight:600;margin-bottom:20px;">What\'s on My Radar</h2>',
     unsafe_allow_html=True,
 )
 
@@ -204,10 +221,10 @@ for i, item in enumerate(learning_items):
 
 neon_divider()
 
-# ── OUTSIDE WORK ───────
-section_label("🎨 Beyond the Terminal")
+# ── INTERESTS / OUTSIDE WORK ──────────────────────────────────────────────────
+section_label("Beyond the Terminal")
 st.markdown(
-    '<h2 style="font-size:24px;font-weight:500;margin-bottom:28px;">Life Outside Work</h2>',
+    '<h2 style="font-size:24px;font-weight:600;margin-bottom:28px;">Life Outside Work</h2>',
     unsafe_allow_html=True,
 )
 
@@ -215,9 +232,9 @@ interests = [
     ("📚", "Reading", "Non-fiction, systems thinking, behavioral economics, and the occasional sci-fi thriller"),
     ("✍️", "Writing", "Maintaining this blog as a commitment to learn in public and document my journey"),
     ("🏃", "Running", "5K three times a week—slow but consistent. Working toward a sub-25 minute mark"),
-    ("♟️", "Chess", "Rated 1700+ on chess.com. Always up for a friendly game (or a competitive one)"),
+    ("♟️", "Chess", "Rated 1600+ on chess.com. Always up for a friendly game (or a competitive one)"),
     ("🏍️", "Riding", "Weekend warrior on my Hunter 350. Dream trip: Leh-Ladakh someday"),
-    ("🎮", "Gaming", "Strategy games"),
+    ("🎮", "Gaming", "Strategy games (Civilization, Age of Empires) when I need to shut the analytical brain off"),
     ("🎨", "Sketching", "Casual sketching—portraits and landscapes. Results vary from 'decent' to 'abstract art'"),
 ]
 
@@ -246,7 +263,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-c1, c2, c3, _ = st.columns([1.9, 1.9, 1.9, 2.75])
+c1, c2, c3, _ = st.columns([1.5, 1.5, 1.5, 3.75])
 with c1:
     st.page_link("pages/2_Experience.py", label="My Experience")
 with c2:
