@@ -358,7 +358,7 @@ def _render_main_assistant(assistant, context):
     col1, col2 = st.columns([1, 3])
     
     with col1:
-        st.markdown("#### 🤖")
+        st.markdown("##### 🤖")
     
     with col2:
         st.markdown(
@@ -376,7 +376,7 @@ def _render_main_assistant(assistant, context):
         )
     
     if not assistant.enabled:
-        st.warning("⚠️ AI Assistant not configured. See sidebar for setup instructions.")
+        st.warning("We are encountering some issues!")
         st.markdown('</div>', unsafe_allow_html=True)
         return
     

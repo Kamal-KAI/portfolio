@@ -58,7 +58,7 @@ if AI_ENABLED:
 col_bio, col_quick = st.columns([3, 2], gap="large")
 
 with col_bio:
-    section_label("👨‍💻Biography")
+    section_label("Bio")
     st.markdown("<br>", unsafe_allow_html=True)
     for line in PROFILE["bio_lines"]:
         st.markdown(
@@ -124,7 +124,7 @@ with col_quick:
 neon_divider()
 
 # ── ACHIEVEMENTS ─────────────────────────────────────────────────────────────
-section_label("🏆Key Achievements")
+section_label("Key Achievements")
 st.markdown(
     '<h2 style="font-size:24px;font-weight:600;margin-bottom:24px;">Highlights & Recognition</h2>',
     unsafe_allow_html=True,
@@ -169,7 +169,7 @@ for i, sk in enumerate(SKILLS):
 neon_divider()
 
 # ── CURRENTLY LEARNING ──────────
-section_label("🎯Current Focus")
+section_label("Current Focus")
 st.markdown(
     '<h2 style="font-size:24px;font-weight:600;margin-bottom:20px;">What\'s on My Radar</h2>',
     unsafe_allow_html=True,
@@ -232,7 +232,7 @@ interests = [
     ("📚", "Reading", "Non-fiction, systems thinking, behavioral economics, and the occasional sci-fi thriller"),
     ("✍️", "Writing", "Maintaining this blog as a commitment to learn in public and document my journey"),
     ("🏃", "Running", "5K three times a week—slow but consistent. Working toward a sub-25 minute mark"),
-    ("♟️", "Chess", "Rated 1600+ on chess.com. Always up for a friendly game (or a competitive one)"),
+    ("♟️", "Chess", "Rated 1700+ on chess.com. Always up for a friendly game (or a competitive one)"),
     ("🏍️", "Riding", "Weekend warrior on my Hunter 350. Dream trip: Leh-Ladakh someday"),
     ("🎮", "Gaming", "Strategy games (Civilization, Age of Empires) when I need to shut the analytical brain off"),
     ("🎨", "Sketching", "Casual sketching—portraits and landscapes. Results vary from 'decent' to 'abstract art'"),
